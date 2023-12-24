@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: black;
+}
+
+.error{
+  width: 380px;
+  height: 445px;
+  border: 2px solid #fff;
+  box-shadow: 0 5px 10px #fff;
+  background-color: #fff;
+}
+
+.cartel_construccion{
+  width: 150px;
+  height: 150px;
+  margin-left: 95px;
+}
+
+.boton button {
+  font-weight: 800;
+  color: black;
+  background: #DACE14;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 4px 20px;
+  margin-top: 25px;
+  
+}
+
+.boton button:hover{
+  background-color: black;
+  color: #DACE14;
+  transform: scale(1.1);
+}

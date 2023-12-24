@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reestablecer Contraseña</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/Css/reseteoContraseña.css">
+</head>
+<body>
+  <main>
+    <div class="container rounded-3" id="container">
+      <div class="d-flex justify-content-center prueba">
+        <h1 class="text-dark pt-3 fs-3 mt-4 fst-italic">Kiosquito el Barba</h1>
+        <img src="../Imgs/beard-2821057_1280.png" alt="" srcset="" class="img">
+      </div>
+      <h2 class="d-block text-center text-dark">Reestablecer Contraseña</h2>
+      <p class="d-block text-center text-dark" id="texto">Para poder reestablecer la contraseña, ingrese el <strong>nombre de usuario</strong> o el <strong>email</strong> abajo de la cuenta a recuperar. Si podemos encontrarlos en la base de datos, se pasará al siguiente paso</p>
+      <form action="" id="form">
+        <div class="formulario" id="formNombreUsuario">
+          <i class="bi bi-person-fill text-dark fs-3"></i>
+          <input autocomplete="off" type="text" name="nombre" id="nombreUsuario" placeholder="Ingresa el nombre de usuario">
+          <p></p>
+        </div>
+        <div class="formulario" id="formEmail">
+          <i class="bi bi-envelope-at-fill text-dark fs-3"></i>
+          <input autocomplete="off" type="email" name="email" id="email" placeholder="Ingresa el email">
+          <p></p>
+        </div>
+        <p class="d-block text-center text-dark fw-bold fs-5" id="textoContraseña">Ingrese una nueva contraseña</p>
+        <div class="formulario" id="formContraseña">
+          <i class="bi bi-key-fill fs-3 text-dark"></i>
+          <input type="password" name="contraseña" id="nuevaContraseña" placeholder="Ingrese la nueva contraseña">
+          <i class="bi-eye-slash text-dark" id="eye"></i>
+          <p></p>
+        </div>
+        <div class="formulario" id="formContraseñaRep">
+          <i class="bi bi-repeat fs-3 text-dark"></i>
+          <input type="password" name="contraseña" id="repContraseña" placeholder="Repetir contraseña">
+          <i class="bi-eye-slash text-dark" id="eye2"></i>
+          <p></p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="boton btn" id="btnContinuar" onclick="buscarUsuario()">Continuar</button>
+          <button type="button" class="boton btn" id="btnReestablecer" onclick="reestablecerContraseña()">Reestablecer Contraseña</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Se usa una libreria para alertas personalizadas-->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="../Js/reseteoContraseña.js"></script>
+</body>
+</html>

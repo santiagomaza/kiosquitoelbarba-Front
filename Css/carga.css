@@ -1,0 +1,135 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.spinner-border{
+  color: #0f0;
+  position: relative;
+  left: 135px;
+  width: 220px;
+  height: 220px;
+}
+
+.textoKiosco{
+  position: relative;
+  right: -20px;
+  font-size: 35px;
+}
+
+.textoProducto{
+  position: relative;
+  right:-1px;
+  font-size: 35px;
+}
+
+.textoCliente{
+  position: relative;
+  right: -15px;
+  font-size: 35px;
+}
+
+.textoVenta{
+  position: relative;
+  right: -25px;
+  font-size: 35px;
+}
+
+.textoUsuarios{
+  position: relative;
+  right: 140px;
+}
+
+.logo{
+  position: relative;
+  top: 55px;
+}
+
+@media (min-width: 320px) and (max-width: 468px){
+  body{
+    height: 100vh;
+  }
+
+  .spinner-border{
+    color: #0f0;
+    position: relative;
+    left: 35px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .textoCliente{
+    position: relative;
+    right: 0.5px;  
+  }
+
+  .textoKiosco{
+    position: relative;
+    right: 0px;
+  }
+
+  .textoVenta{
+    position: relative;
+    right: 0.5px;
+  }
+
+  .textoProducto{
+    position: relative;
+    right: 5px;
+  }
+
+  .textoUsuarios{
+    position: relative;
+    right: 5px;
+  }
+
+  #texto{
+    font-size: 20px;
+  }
+}
+
+@media(min-width:468px) and (max-width:768px){
+  body{
+    height: 75vh;
+  }
+
+  .spinner-border{
+    color: #0f0;
+    position: relative;
+    left:125px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .textoVenta{
+    position: relative;
+    right: 0.5px;
+  }
+
+  .textoCliente{
+    position: relative;
+    right: 0.5px;  
+  }
+
+  .textoKiosco{
+    position: relative;
+    right: 0px;
+  }
+
+  .textoProducto{
+    position: relative;
+    right: -5px;
+    font-size: 33px;
+  }
+
+  .textoUsuarios{
+    position: relative;
+    right: 5px;
+    font-size: 34px;
+  }
+}

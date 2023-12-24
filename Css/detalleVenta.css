@@ -1,0 +1,20 @@
+body{
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.container{
+  width: 500px;
+  height: 600px;
+  border: 1px solid black;
+}
+
+.boton{
+  position: relative;
+  margin-right: 15px;
+}
+
+#volverVentas{
+ display: none; 
+}

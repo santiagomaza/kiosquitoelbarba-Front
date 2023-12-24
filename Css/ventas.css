@@ -1,0 +1,201 @@
+/*CSS Ventas*/
+
+#actualizar{
+    display: none;
+}
+
+.navbar{
+    background-color: #0f0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    border: 1px solid;
+    padding: 10px;
+    background-color: rgb(23, 216, 23);
+}
+
+.botonDV:hover{
+    border: none;
+    padding: 0;
+    background-color: none;
+}
+
+.dropdown-menu{
+    background-color: #0f0;
+}
+
+.dropdown-item:hover{
+    border: none;
+    background-color: rgb(29, 192, 29);
+    padding: 10px;
+}
+
+.container{
+    border: solid 1px #000;
+    height: 750px;
+    width: 550px;
+    overflow: hidden;
+    --bs-gutter-x: 0;
+}
+
+.cabecera{
+    background-color: #0f0;
+    padding: 0;
+    width: 100%;
+}
+
+.campos{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+form label{
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+form input{
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    width: 20vw;
+}
+
+form select{
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    width: 20vw;
+}
+
+.campos.incorrectos input{
+  border-bottom: 1px solid red;
+  margin-bottom: 3px;
+  outline: none;
+}
+
+.campos.validos input{
+    border-bottom: 1px solid #000;
+}
+
+.campos p{
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+}
+
+.campos.incorrectos p{
+    visibility: visible;
+    color: rgb(250, 0, 0);
+    margin-left: 30px;
+}
+
+.bi{
+    position: relative;
+    right:27px;
+    top: 3px;
+    font-size: 28px;
+}
+
+.buscador{
+    position: relative;
+    right: 55px;
+}
+
+.borrar{
+    position: relative;
+    left: 0.1px;
+    top: 0.1px;
+}
+
+.editar{
+    position: relative;
+    left: 0.1px;
+    top: 0.1px;
+}
+
+.descargar{
+    position: relative;
+    left: 0.1px;
+    top: 0.1px;
+}
+
+@media (min-width: 460px) and (max-width:768px){
+    .container{
+        width: 90vw;
+    }
+
+    .cabecera h2{
+        position: relative;
+        top: 12px;
+    }
+
+    form input{
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+        width: 60vw;
+    }
+
+    form select{
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+        width: 60vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width:468px){
+    .container{
+        width: 90vw;
+    }
+
+    .cabecera h2{
+        font-size: 19px;
+        position: relative;
+        top: 10px;
+    }
+
+    form input{
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+        width: 50vw;
+    }
+
+    form select{
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+        width: 50vw;
+    }
+
+    .buscador{
+        position: relative;
+        font-size: 15px;
+        left: 59px;
+        top: -35px;
+    }
+
+    .bi-search{
+        position: relative;
+        right: 45px;
+    }
+
+    .seccionTabla{
+        position: relative;
+        top: -28px;
+    }
+
+    .fecha{
+        color: blue;
+    }
+}

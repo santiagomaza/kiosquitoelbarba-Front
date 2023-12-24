@@ -1,0 +1,132 @@
+body{
+  overflow-x: hidden;
+}
+
+/*Css productos*/
+.navbar{
+  background-color: #0f0;
+  position: fixed;
+  width: 100%;
+}
+
+.seccion1{
+  margin-top: 90px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  border: 1px solid;
+  padding: 10px;
+  background-color: rgb(23, 216, 23);
+}
+
+.dropdown-menu{
+  background-color: #0f0;
+}
+
+.dropdown-item:hover{
+  border: none;
+  background-color: rgb(29, 192, 29);
+  padding: 10px;
+}
+
+.textoInfo{
+  font-size: 25px;
+}
+
+.campos{
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.campos input{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 75%;
+}
+
+.bi-search{
+  position: relative;
+  right:27px;
+  top: 3px;
+  font-size: 28px;
+}
+
+.buscador{
+  position: relative;
+  right: 55px;
+}
+
+@media (min-width: 320px) and (max-width:385px){
+
+  .textoInfo{
+    font-size: 13px;
+    position: relative;
+    top: -20px;
+    text-align: center;
+  }
+  
+  .textoBoton1{
+    position: absolute;
+    font-size: 13px;
+    top: 125px;
+    left: 125px;
+  }
+
+  .buscador{
+    position: relative;
+    font-size: 43px;
+    left: -45px;
+    top: 10px;
+  }
+
+  .bi-search{
+    position: relative;
+    right: 10px;
+    top: 10px;
+  }
+
+  .seccionTabla{
+    position: relative;
+    top: 15px;
+  }
+}
+
+@media (min-width:468px) and (max-width:768px){
+  .textoInfo{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .textoBoton1{
+    position: absolute;
+    font-size: 13px;
+    top: 145px;
+    left: 195px;
+  }
+
+  .buscador{
+    position: relative;
+    font-size: 43px;
+    left:-5px;
+    top: 10px;
+  }
+
+  .bi-search{
+    position: relative;
+    right: -20px;
+    top: 13px;
+  }
+
+  .seccionTabla{
+    position: relative;
+    top: 10px;
+  }
+}

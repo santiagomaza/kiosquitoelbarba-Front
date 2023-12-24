@@ -1,0 +1,148 @@
+/*CSS LOGIN*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img{
+  height: 100px; 
+  width: 100px;
+}
+
+body{
+  background: linear-gradient(to bottom right,rgb(23, 216, 23), rgb(0, 0, 0));
+  background-size: 300% 300%;
+}
+
+.container{
+  position: relative;
+  height: 470px;
+  width: 540px;
+  margin-top: 124px;
+  background-color: rgba(13, 239, 24, 0.96);
+  box-shadow: 6px 4px black;
+  color: white;
+  overflow: hidden;
+}
+
+.prueba{
+  position: relative;
+  left: 25px;
+}
+
+.formulario{
+  width: 100%;
+  margin: 15px 0px 47px 25px;
+}
+
+.formulario input{
+  display: inline;
+  width: 75%;
+  background-color: rgba(0, 0, 0, 0.342);
+  outline: none;
+  border: 0.1px solid black;
+  border-radius: 7px;
+  padding: 5px;
+  color: #fff;
+  margin-left: 50px;
+}
+
+input::placeholder{
+  color: #ffffff51;
+}
+
+.formulario i{
+  position: absolute;
+  margin-top: -4px;
+}
+
+.formulario.falla input{
+  border: 1px solid  rgb(185, 44, 44);
+  margin-bottom: 3px;
+}
+
+.formulario.ok input{
+  border: 0.1px solid black;
+}
+
+.bi-eye{
+  font-size: 20px;
+  transform: translateX(-35px);
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+.bi-eye:hover{
+  color: rgb(195, 53, 53);
+}
+
+.bi-eye-slash{
+  font-size: 20px;
+  transform: translateX(-35px);
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+.bi-eye-slash:hover{
+  color: rgb(66, 178, 60)
+}
+
+.formulario p{
+  visibility: hidden;
+  position: absolute;
+  font-size: small;
+  font-weight: 500;
+}
+
+.formulario.falla p{
+  visibility: visible;
+  color: rgb(185, 44, 44);
+  margin-left: 52px;
+}
+
+.textoReestablecer{
+  position: relative;
+  top: -35px;
+  right: 55px;
+}
+
+.boton{
+  width: 40%;
+  color: white;
+  background-color: rgba(87, 55, 92, 0.235);
+}
+
+.boton:hover{
+  background-color: rgba(87, 55, 92, 0.112);
+}
+
+.show{
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media(min-width: 468px) and (max-width:768px){
+  .container{
+    width: 95vw;
+  }
+
+  .textoReestablecer{
+    position: relative;
+    right: 30px;
+    top: -25px;
+  }
+
+  .formulario i{
+    position: absolute;
+    margin-top: -1px; 
+  }
+
+  .formulario p{
+    visibility: hidden;
+    position: absolute;
+    font-size: smaller;
+    font-weight: 400;
+  }
+
+}
