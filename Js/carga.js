@@ -1,6 +1,6 @@
 const path = localStorage.getItem("path")
 
-if(path == 'ventasToKiosco' || path == 'clientesToKiosco' || path == 'productosToKiosco' || path == './html/login.html' || path == "usuariosToKiosco") //REDIRECCION A KIOSCO
+if(path == 'ventasToKiosco' || path == 'clientesToKiosco' || path == 'productosToKiosco' || path == 'loginToKiosco' || path == "usuariosToKiosco") //REDIRECCION A KIOSCO
 {
   document.getElementById("texto").textContent = 'Redireccionando a Kiosco...'
   document.getElementById("texto").classList.add('textoKiosco')

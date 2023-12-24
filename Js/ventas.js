@@ -336,7 +336,7 @@ if(path == 'kioscoToVentas' || path == 'productosToVentas' || path == 'clientesT
 {
     //localStorage.removeItem('path')
 }
-else if(path !== './html/login.html')
+else if(path !== 'loginToKiosco')
 {
     window.location.pathname = '../index.html'
     localStorage.clear()

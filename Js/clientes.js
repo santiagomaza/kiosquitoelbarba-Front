@@ -25,7 +25,7 @@ let path = localStorage.getItem('path')
 if(path == 'kioscoToClientes' || path == 'ventasToClientes' || path == 'productosToClientes' || path == "usuariosToClientes"){
   //localStorage.removeItem('path')
 }
-else if(path !== './html/login.html')
+else if(path !== 'loginToKiosco')
 {
   window.location.pathname = '../index.html'
   localStorage.clear()

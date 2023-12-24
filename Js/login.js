@@ -73,10 +73,11 @@ const ingresar = async (nombreUsuarioValor, contraseñaValor) =>
   const datos = await obtenerUsuarios()
 
   const usuario = datos.find(user => user.usuario === nombreUsuarioValor)
+  const contraseña = datos.find(user => user.contraseña === contraseñaValor)
 
-  localStorage.setItem("path", './html/login.html')
+  localStorage.setItem("path", 'loginToKiosco')
 
-  if (usuario.contraseña === contraseñaValor) 
+  if (contraseña && usuario) 
   {
     Swal.fire({
       title: `Bienvenido ${nombreUsuarioValor}!!`,
@@ -90,9 +91,9 @@ const ingresar = async (nombreUsuarioValor, contraseñaValor) =>
     setTimeout(() => {
       window.location.pathname = "../html/carga.html"; 
     }, 800);
-
   }
-  else{
+  else
+  {
     Swal.fire({
       "icon": "error",
       "title": "Uno de los datos no coincide. Intentalo de nuevo"

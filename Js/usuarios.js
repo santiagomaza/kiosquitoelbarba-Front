@@ -98,7 +98,7 @@ const path = localStorage.getItem("path")
 if(path === "kioscoToUsuarios" || path == "ventasToUsuarios" || path == "productosToUsuarios" || path == "clientesToUsuarios"){
 
 }
-else if(path !== './html/login.html')
+else if(path !== 'loginToKiosco')
 {
   window.location.pathname = '../index.html'
   localStorage.clear()

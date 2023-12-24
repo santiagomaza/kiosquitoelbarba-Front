@@ -15,9 +15,9 @@ else if(role === "")
 
 const path = localStorage.getItem("path")
 
-if(path === "./html/login.html" || path == 'ventasToKiosco' || path == 'clientesToKiosco' || path == 'productosToKiosco' || path == "usuariosToKiosco"){}
+if(path === "loginToKiosco" || path == 'ventasToKiosco' || path == 'clientesToKiosco' || path == 'productosToKiosco' || path == "usuariosToKiosco"){}
 
-else if(path !== "./html/login.html" || path !== 'ventasToKiosco' || path !== 'clientesToKiosco' || path !== 'productosToKiosco'){
+else if(path !== "loginToKiosco" || path !== 'ventasToKiosco' || path !== 'clientesToKiosco' || path !== 'productosToKiosco'){
   window.location.pathname = "../index.html"
   localStorage.clear()
 }
@@ -119,5 +119,5 @@ const filtroBusqueda = async (valor) => {
   </div>
 `)
 
-cardsProductos.innerHTML = filtrarProducto.join('')
+  cardsProductos.innerHTML = filtrarProducto.join('')
 }
