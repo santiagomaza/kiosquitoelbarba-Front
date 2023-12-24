@@ -6,7 +6,7 @@ if(path == 'ventasToKiosco' || path == 'clientesToKiosco' || path == 'productosT
   document.getElementById("texto").classList.add('textoKiosco')
   
   setTimeout(() => {
-    window.location.pathname = '../kiosco.html'
+    window.location.pathname = '../html/kiosco.html'
   }, 1500);
 
 }

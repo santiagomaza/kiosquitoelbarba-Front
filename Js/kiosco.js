@@ -10,7 +10,7 @@ else if(role == "user")
 }
 else if(role === "")
 {
-  window.location.pathname = '../html/login.html'
+  window.location.pathname = '../index.html'
 }
 
 const path = localStorage.getItem("path")
@@ -18,7 +18,7 @@ const path = localStorage.getItem("path")
 if(path === "./html/login.html" || path == 'ventasToKiosco' || path == 'clientesToKiosco' || path == 'productosToKiosco' || path == "usuariosToKiosco"){}
 
 else if(path !== "./html/login.html" || path !== 'ventasToKiosco' || path !== 'clientesToKiosco' || path !== 'productosToKiosco'){
-  window.location.pathname = "../html/login.html"
+  window.location.pathname = "../index.html"
   localStorage.clear()
 }
 
@@ -41,7 +41,7 @@ const pagUsuarios = () => {
 const botonSalir = document.getElementById("salir")
 
 botonSalir.addEventListener("click", () => {
-  window.location.pathname = './html/login.html'
+  window.location.pathname = './index.html'
   localStorage.clear()
 })
 
@@ -64,7 +64,7 @@ const mostrarCards = () =>
                   <p class="card-text"><strong>Stock Disponible:</strong> ${producto.Cantidad}</p>
                 </div>
                 <div class="d-flex justify-content-start">
-                <a href = "./html/error.html" class=""><button type="button" class="btn btn-success boton px-4">Comprar</button></a>
+                <a href = "./error.html" class=""><button type="button" class="btn btn-success boton px-4">Comprar</button></a>
                 </div>
               </div>
             </div>

@@ -42,7 +42,8 @@ body{
 
 .textoUsuarios{
   position: relative;
-  right: 140px;
+  right: 0px;
+  font-size: 35px;
 }
 
 .logo{

@@ -100,7 +100,7 @@ if(path === "kioscoToUsuarios" || path == "ventasToUsuarios" || path == "product
 }
 else if(path !== './html/login.html')
 {
-  window.location.pathname = '../html/login.html'
+  window.location.pathname = '../index.html'
   localStorage.clear()
 }
 
@@ -123,7 +123,7 @@ const pagProductos = () => {
 const botonSalir = document.getElementById("salir")
 
 botonSalir.addEventListener("click", () => {
-  window.location.pathname = './html/login.html'
+  window.location.pathname = '../index.html'
   localStorage.clear()
 })
 
@@ -131,9 +131,9 @@ const role = localStorage.getItem("role")
 
 if(role == "")
 {
-  window.location.pathname = "../html/login.html"
+  window.location.pathname = "../index.html"
 }
 else if(role == "user")
 {
-  window.location.pathname = "./kiosco.html"
+  window.location.pathname = "../html/kiosco.html"
 }

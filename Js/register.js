@@ -91,7 +91,7 @@ const registrarse = async (nombreCompletoValor, emailValor, nombreUsuarioValor, 
     })
 
     setTimeout(() => {
-      window.location.href = "../html/login.html"
+      window.location.href = "../index.html"
     }, 2500);
   }
 }

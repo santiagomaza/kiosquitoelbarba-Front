@@ -170,7 +170,7 @@ const reestablecerContraseña = async () => {
     })
 
     setTimeout(() => {
-      window.location.pathname = "../html/login.html"
+      window.location.pathname = "../index.html"
     }, 2700);
 
   }
