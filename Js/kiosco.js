@@ -3,10 +3,13 @@ const role = localStorage.getItem("role")
 if(role == "admim")
 {
   document.getElementById("administracion").style.display = "inline-block"
+  document.getElementById("alerta").style.visibility = 'visible'
 }
 else if(role == "user")
 {
   document.getElementById("administracion").style.display = "none"
+  document.getElementById("alerta").style.visibility = 'hidden'
+  document.getElementById("seccionBuscador").style.marginTop = '-144px'
 }
 else if(role === "")
 {

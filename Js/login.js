@@ -73,11 +73,11 @@ const obtenerUsuarios = async () =>
   const resultado = await axios.get("https://kiosquitoelbarba-backend.onrender.com/usuarios/")
 
   if(resultado){
-    textoCargaBD.textContent = 'Conexión exitosa a la base de datos. Ahora puedes loguearte'
+    textoCargaBD.textContent = 'Conexión exitosa a la base de datos'
     setTimeout(() => {
       textoCargaBD.style.visibility = 'hidden'
     }, 1600);
-  } 
+  }
   return resultado.data
 }
 
