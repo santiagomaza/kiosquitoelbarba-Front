@@ -1,3 +1,11 @@
+const textoCargaBD = document.getElementById("textoCarga")
+
+window.addEventListener("DOMContentLoaded", () => {
+  if(obtenerUsuarios())
+  {
+    textoCargaBD.style.visibility = 'visible'
+  }
+})
 
 let nombreUsuario = document.getElementById("nombre");
 let contraseña = document.getElementById("contraseña");
@@ -64,6 +72,12 @@ const obtenerUsuarios = async () =>
 {
   const resultado = await axios.get("https://kiosquitoelbarba-backend.onrender.com/usuarios/")
 
+  if(resultado){
+    textoCargaBD.textContent = 'Conexión exitosa a la base de datos. Ahora puedes loguearte'
+    setTimeout(() => {
+      textoCargaBD.style.visibility = 'hidden'
+    }, 1600);
+  } 
   return resultado.data
 }
 
